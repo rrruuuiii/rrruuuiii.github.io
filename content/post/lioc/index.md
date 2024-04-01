@@ -88,6 +88,6 @@ Now, consider the proposition $(A \supset B) \supset (\neg B \supset \neg A)$. W
 
 {{< /math >}}
 
-A few points are worth mentioning here. First, note that $\texttt{letcc}^z$ introduces $\neg \neg A$, which we cannot directly apply double negation to obtain $A$. Also, we cannot use the introduction rule $\supset I$ since we are currently interpreting $\neg A$ as a continuation rather than $A \rightarrow \bot$ in the constructive sense. So the only rule that could be applied to $\neg A$ is the $\texttt{letcc}$ rule. Dually, the $\texttt{throw}$ rule replaces the $\supset E$ rule applying to $\neg A$. The $\supset E$ rule could still be applied to any propositions that are not negated.
+A few points are worth mentioning here. First, note that $\texttt{letcc}^z$ introduces $\neg \neg A$, which we cannot directly apply double negation to obtain $A$. Also, we cannot apply the introduction rule $\supset I$ to $\neg A$ since we are currently interpreting $\neg A$ as a continuation rather than $A \rightarrow \bot$ in the constructive sense. So the only rule that could be applied to $\neg A$ is the $\texttt{letcc}$ rule. Dually, the $\texttt{throw}$ rule replaces the $\supset E$ rule that could've been applied to $\neg A$ and $A$ in constructive logic. The $\supset E$ rule could still be applied to any propositions of the form $A \supset B$ and $A$.
 
 TODO: finish the rest of this blog post.
