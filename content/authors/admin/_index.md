@@ -114,5 +114,5 @@ education:
 # highlight_name: true
 ---
 
-Hi, I am Rui Li, a computer science student at CMU.
+Hi, I am Rui Li, a computer science student from CMU. Here, I am to post some of the elegant computer science/math ideas I found during my study.
 {style="text-align: justify;"}
