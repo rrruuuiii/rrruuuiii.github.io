@@ -3,7 +3,7 @@
 title: 李睿
 
 # Name pronunciation (optional)
-name_pronunciation: Rui Li
+name_pronunciation: LI RUI
 
 # Full name (for SEO)
 first_name: Rui
@@ -25,7 +25,7 @@ superuser: true
 #     url: https://www.stanford.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 
 
 # Interests to show in About widget
 # interests:
@@ -114,5 +114,5 @@ education:
 # highlight_name: true
 ---
 
-Hi, I am Rui Li, a computer science student from CMU. Here, I am to post some of the elegant computer science/math ideas I found during my study.
+Hi, I am a computer science student at CMU. Here, I am to post some of the computer science/math ideas I found during my study.
 {style="text-align: justify;"}
