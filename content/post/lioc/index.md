@@ -5,7 +5,7 @@ date: '2024-04-01'
 
 Hi, I'm Rui! This is my first blog post.
 
-Happy April Fools' Day! But I'm not here making jokes. Today, I was reading recitation notes on continuations and would like to present some rules that could be used in a proof tree to help us construct a proof term involving continuations.
+Happy April Fools' Day! But I'm not here making jokes. Today, I was reading recitation notes on continuations and would like to present some rules that could be used in a proof tree to help us construct a proof term involving continuations much more easily.
 
 We know the correspondence between continuation and proposition:
 
@@ -88,6 +88,8 @@ Now, consider the proposition $(A \supset B) \supset (\neg B \supset \neg A)$. W
 
 {{< /math >}}
 
-A few points are worth mentioning here. First, note that $\texttt{letcc}^z$ introduces $\neg \neg A$, which we cannot directly apply double negation to obtain $A$. Also, we cannot apply the introduction rule $\supset I$ to $\neg A$ since we are currently interpreting $\neg A$ as a continuation rather than $A \rightarrow \bot$ in the constructive sense. So the only rule that could be applied to $\neg A$ is the $\texttt{letcc}$ rule. Dually, the $\texttt{throw}$ rule replaces the $\supset E$ rule that could've been applied to $\neg A$ and $A$ in constructive logic. The $\supset E$ rule could still be applied to any propositions of the form $A \supset B$ and $A$.
+A few points are worth mentioning here. First, note that $\texttt{letcc}^z$ introduces $\neg \neg A$, which we cannot directly apply double negation to obtain $A$. Also, we cannot apply the introduction rule $\supset I$ to $\neg A$ since we are currently interpreting $\neg A$ as a continuation rather than $A \rightarrow \bot$ in the constructive sense.
+
+Therefore, the only rule that could be applied to $\neg A$ is the $\texttt{letcc}$ rule. Dually, the $\texttt{throw}$ rule replaces the $\supset E$ rule that could've been applied to $\neg A$ and $A$ in constructive logic. The $\supset E$ rule could still be applied to any propositions of the form $A \supset B$ and $A$.
 
 TODO: finish the rest of this blog post.
