@@ -43,5 +43,5 @@ education:
 Hi, I am a computer science student at CMU. Here, I am posting some of the computer science/math ideas I found during my study.
 {style="text-align: justify;"}
 
-I like beautiful and elegant ideas in math. I believe that almost always, such ideas give birth to cleaner ways of building automations of reasoning. 
+I like beautiful and elegant ideas in math. I believe that almost always, such ideas give birth to cleaner ways of building automation of reasoning. 
 {style="text-align: justify;"}
