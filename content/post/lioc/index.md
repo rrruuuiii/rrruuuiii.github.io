@@ -92,4 +92,53 @@ A few points are worth mentioning here. First, note that $\texttt{letcc}^z$ intr
 
 Therefore, the only rule that could be applied to $\neg A$ is the $\texttt{letcc}$ rule. Dually, the $\texttt{throw}$ rule replaces the $\supset E$ rule that could've been applied to $\neg A$ and $A$ in constructive logic. The $\supset E$ rule could still be applied to any propositions of the form $A \supset B$ and $A$.
 
-TODO: finish the rest of this blog post.
+Annotating the above proof tree with terms, we have:
+
+{{< math >}}
+
+\begin{prooftree}
+    % L
+    \AxiomC{$y : \neg B$}
+
+    % RL
+    \AxiomC{$x : A \supset B$}
+
+    % RRL
+    \AxiomC{$z : \neg \neg A$}
+
+    % RRR
+    \AxiomC{$u : \neg A$}
+        
+    % RR
+    \RightLabel{$\texttt{throw}$}
+    \BinaryInfC{$\texttt{throw}[A](z;u) : A$}
+
+    \RightLabel{$\texttt{letcc}^u$}
+    \UnaryInfC{$\texttt{letcc}[A](u \ . \ \texttt{throw}[A](z;u)) : A$}
+
+    % R
+    \RightLabel{$\supset E$}
+    \BinaryInfC{$x(\texttt{letcc}[A](u \ . \ \texttt{throw}[A](z;u))) : B$}
+
+    \RightLabel{$\texttt{throw}$}
+    \BinaryInfC{$\texttt{throw}[\neg A](y ; x(\texttt{letcc}[A](u \ . \ \texttt{throw}[A](z;u)))) : \neg A$}
+
+    \RightLabel{$\texttt{letcc}^z$}
+    \UnaryInfC{$\texttt{letcc}[\neg A](z \ . \ \texttt{throw}[\neg A](y ; x(\texttt{letcc}[A](u \ . \ \texttt{throw}[A](z;u))))) : \neg A$}
+
+    \RightLabel{$\supset I^y$}
+    \UnaryInfC{$\lambda \ (y : \neg B)  \ \texttt{letcc}[\neg A](z \ . \ \texttt{throw}[\neg A](y ; x(\texttt{letcc}[A](u \ . \ \texttt{throw}[A](z;u))))) : \neg B \supset \neg A$}
+
+    \RightLabel{$\supset I^x$}
+    \UnaryInfC{$M : (A \supset B) \supset (\neg B \supset \neg A)$}
+\end{prooftree}
+where 
+$$
+    M = \lambda (x : A \supset B) \  \lambda \ (y : \neg B)  \ \texttt{letcc}[\neg A](z \ . \ \texttt{throw}[\neg A](y ; x(\texttt{letcc}[A](u \ . \ \texttt{throw}[A](z;u)))))
+$$
+
+{{< /math >}}
+
+FIXME: proof tree is too big.
+
+TODO: finish the rest of this post.
