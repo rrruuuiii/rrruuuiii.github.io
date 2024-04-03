@@ -28,8 +28,9 @@ superuser: true
 bio: Hello World! 
 
 # Interests to show in About widget
-# interests:
-#   - Programming Languages Theory
+interests:
+  - Logic
+  - Programming Language Theory
 
 # Education to show in About widget
 education:
@@ -40,8 +41,8 @@ education:
 
 ---
 
-Hi, I am a computer science student at CMU. Here, I am posting some of the computer science/math ideas I found during my study.
+Hi, I am a computer science student at CMU, with a concentration in Principles of Programming Languages. Here, I am posting some of the computer science/math ideas I found during my study.
 {style="text-align: justify;"}
 
-I like beautiful and elegant ideas in math. I believe that almost always, such ideas give birth to cleaner ways of building automation of reasoning. 
+I like beautiful and elegant ideas in math. I believe that almost always, such ideas make possible cleaner ways of building automation of reasoning. 
 {style="text-align: justify;"}
